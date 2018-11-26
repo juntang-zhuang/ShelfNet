@@ -69,7 +69,7 @@
 **Video demo of ShelfNet50 on Cityscapes**
 <a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet50_demo.gif" align="left"  width="1000" ></a> </br>
 **Video demo of ShelfNet101 on Cityscapes** </br>
-<a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet101_demo.gif" align="left"  width="1000" ></a> </br>
+<a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet101_demo.gif" align="left"  width="1000" ></a> </br></br></br>
 
 # Numerical results on Pascal VOC
 ![Pascal_results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/results_table.png)
