@@ -60,7 +60,7 @@
 
 **Measure running speed**
 * Measure running speed of ShelfNet on 512x512 image. </br>
-```python test_psp_speed.py --model shelfnet --backbone resnet101```
+```python test_speed.py --model shelfnet --backbone resnet101```
 
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
