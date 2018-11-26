@@ -13,6 +13,7 @@ from torch.nn.functional import upsample
 from .base import BaseNet
 from .fcn import FCNHead
 from ..nn import PyramidPooling
+from ..datasets import datasets
 
 class PSP(BaseNet):
     def __init__(self, nclass, backbone, aux=True, se_loss=False, norm_layer=nn.BatchNorm2d, **kwargs):
@@ -58,7 +59,7 @@ def get_psp(dataset='pascal_voc', backbone='resnet50', pretrained=False,
         'ade20k': 'ade',
     }
     # infer number of classes
-    from ..datasets import datasets, VOCSegmentation, VOCAugSegmentation, ADE20KSegmentation
+    
     model = PSP(datasets[dataset.lower()].NUM_CLASS, backbone=backbone, root=root, **kwargs)
     if pretrained:
         from .model_store import get_model_file
