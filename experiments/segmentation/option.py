@@ -34,7 +34,7 @@ class Options():
         # training hyper params
         parser.add_argument('--aux', action='store_true', default= True,
                             help='Auxilary Loss')
-        parser.add_argument('--se-loss', action='store_true', default= False,
+        parser.add_argument('--se-loss', action='store_true', default= True,
                             help='Semantic Encoding Loss SE-loss')
         parser.add_argument('--epochs', type=int, default=None, metavar='N',
                             help='number of epochs to train (default: auto)')
