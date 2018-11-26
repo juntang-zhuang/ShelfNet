@@ -1,4 +1,4 @@
-# LadderNet 
+# ShelfNet 
 * [Link to my homepage](https://juntangzhuang.com)
 * This is repository for my paper [ShelfNet for real-time semantic segmentation](https://juntang-zhuang.github.io/files/ShelfNet_2019.pdf), and avhieves both fast inference speed and high segmentation accuracy<br>
 * This implementation is based on [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding). Main difference is the structure of the model.
