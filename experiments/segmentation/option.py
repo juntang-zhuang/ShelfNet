@@ -14,7 +14,7 @@ class Options():
             Segmentation')
         # model and dataset 
         parser.add_argument('--model', type=str, default='laddernet',
-                            help='model name (default: encnet)')
+                            help='model name (default: laddernet)')
         parser.add_argument('--diflr', action='store_true', default=True,
                             help='use different lr for head and backbone if set as True')
         parser.add_argument('--backbone', type=str, default='resnet50',
@@ -63,24 +63,7 @@ class Options():
         parser.add_argument('--seed', type=int, default=1, metavar='S',
                             help='random seed (default: 1)')
         # checking point
-        parser.add_argument('--resume', type=str, default='/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/laddernet/resnet50_laddernetv66_fast_laddernet_noaux_coco_se/model_best.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/laddernet/resnet50_laddernetv66_fast_laddernet_noaux_coco_se/model_best.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/coco/laddernet/resnet50_laddernetv66_fast_laddernet_noaux/model_best.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/citys/laddernet/resnet50_laddernetv66_fast_laddernet_noaux_se/checkpoint.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/laddernet/resnet101_laddernetv66_fast_laddernet_noaux_pascal_only_se_se/checkpoint.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/laddernet/resnet101_laddernetv66_fast_laddernet_noaux_coco/model_best.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/laddernet/resnet101_laddernetv66_fast_laddernet_noaux_coco/checkpoint.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/laddernet/resnet101_laddernetv66_ladder_1014v2_auxweight0.5/model_best.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/laddernet/resnet101_laddernetv66_fast_laddernet_noaux/checkpoint.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/laddernet/resnet101_laddernetv66_ladder_1014v2_auxweight0.5/checkpoint.pth.tar',
-        #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/laddernet/resnet101_laddernetv66_psp1_ladder_auxweight0.5/checkpoint.pth.tar',
-        #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/laddernet/resnet101_laddernetv66_psp1_ladder_auxweight0.5/checkpoint.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/laddernet/resnet101_laddernetv67/model_best.pth.tar',
-                            #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/encladdernet/resnet101/model_best.pth.tar',
-        #'/data2/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_voc/encladdernet/default/model_best.pth.tar',#'/data1/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/encladdernet/default/model_best.pth.tar',
-        #'/data1/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/encladdernet/default/model_best.pth.tar',
-                            #'/data1/SemanticSegmentation/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/encnet/default/checkpoint.pth.tar',
-        #None,#'/data1/PyTorch-Encoding-master/experiments/segmentation/runs/pascal_aug/laddernet/default/checkpoint.pth.tar',
+        parser.add_argument('--resume', type=str, default='',
                             help='put the path to resuming file if needed')
         parser.add_argument('--checkname', type=str, default='resnet50_laddernetv66_fast_laddernet_aux_64',
                             help='set the checkpoint name')
