@@ -54,6 +54,10 @@
 ```python test_single_scale.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar```
 * Similar experiments can be performed on ShelfNet with ResNet101 backbone
 
+**Evaluation scripts**
+* You can use the following script to generate ground truth - prediction pairs on PASCAL VOC validation set. </br>
+```python evaluate_and_save.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar --eval
+```
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
 
