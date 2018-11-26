@@ -58,9 +58,13 @@
 * You can use the following script to generate ground truth - prediction pairs on PASCAL VOC validation set. </br>
 ```python evaluate_and_save.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar --eval
 ```
+
+**Measure running speed**
+* Measure running speed of ShelfNet on 512x512 image. </br>
+```python test_psp_speed.py --model shelfnet --backbone resnet101```
+
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
-
 # Video Demo on Cityscapes datasets
 **Video demo of ShelfNet50 on Cityscapes**
 <a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet50_demo.gif" align="left"  width="1000" ></a> </br>
