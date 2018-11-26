@@ -17,6 +17,8 @@ from ..nn import PyramidPooling
 from .LadderNetv66_small import Decoder,BasicBlock,LadderBlock
 from torch.nn import Module, Sequential, Conv2d, ReLU, AdaptiveAvgPool2d, \
     NLLLoss, BCELoss, CrossEntropyLoss, AvgPool2d, MaxPool2d, Parameter
+# infer number of classes
+from ..datasets import datasets
 
 __all__ = ['LadderNet', 'get_laddernet', 'get_laddernet_resnet50_pcontext',
            'get_laddernet_resnet101_pcontext', 'get_laddernet_resnet50_ade']
@@ -132,8 +134,7 @@ def get_laddernet(dataset='pascal_voc', backbone='resnet50', pretrained=False,
         'pcontext': 'pcontext',
     }
     kwargs['lateral'] = True if dataset.lower() == 'pcontext' else False
-    # infer number of classes
-    from ..datasets import datasets, VOCSegmentation, VOCAugSegmentation, ADE20KSegmentation
+    
     model = LadderNet(datasets[dataset.lower()].NUM_CLASS, backbone=backbone, root=root, **kwargs)
     if pretrained:
         from .model_store import get_model_file
