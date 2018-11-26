@@ -17,7 +17,7 @@ from .base import BaseDataset
 class ContextSegmentation(BaseDataset):
     BASE_DIR = 'VOCdevkit/VOC2010'
     NUM_CLASS = 59
-    def __init__(self, root=os.path.expanduser('/data2/.encoding/data'), split='train',
+    def __init__(self, root=os.path.expanduser('~/.encoding/data'), split='train',
                  mode=None, transform=None, target_transform=None, return_file=False,**kwargs):
         super(ContextSegmentation, self).__init__(
             root, split, mode, transform, target_transform, **kwargs)
