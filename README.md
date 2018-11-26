@@ -72,4 +72,4 @@
 <a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet101_demo.gif" align="left"  width="1000" ></a> </br>
 </br></br>
 # Numerical results on Pascal VOC
-<a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/results_table.png" align="left"  width="1100" ></a> </br>
+<a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/results_table.png" align="left"  width="1500" ></a> </br>
