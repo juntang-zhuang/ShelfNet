@@ -70,7 +70,7 @@ class Options():
         parser.add_argument('--model-zoo', type=str, default=None,
                             help='evaluating on model zoo model')
         # finetuning pre-trained models
-        parser.add_argument('--ft', action='store_true', default= True,
+        parser.add_argument('--ft', action='store_true', default= False,
                             help='finetuning on a different dataset')
         parser.add_argument('--pre-class', type=int, default=None,
                             help='num of pre-trained classes \
