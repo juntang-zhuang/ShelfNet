@@ -103,14 +103,16 @@ def test(args):
 
         run_time.append(end-start)
 
+    run_time.pop(0)
+
     print('Mean running time is ', np.mean(run_time))
 
 if __name__ == "__main__":
     args = Options().parse()
     args.model='pspnet'
-    args.backbone='resnet101'
-    args.aux=True
-    args.se_loss=True
+    args.aux = True
+    args.se_loss = True
+    args.backbone = 'resnet101'
     torch.manual_seed(args.seed)
     args.test_batch_size = torch.cuda.device_count()
     test(args)
