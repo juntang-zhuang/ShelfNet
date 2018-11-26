@@ -5,7 +5,7 @@ import argparse
 import zipfile
 from encoding.utils import download, mkdir
 
-_TARGET_DIR = os.path.expanduser('/data2/.encoding/data')
+_TARGET_DIR = os.path.expanduser('~/.encoding/data')
 
 def parse_args():
     parser = argparse.ArgumentParser(
