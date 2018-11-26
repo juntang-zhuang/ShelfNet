@@ -15,6 +15,7 @@
 * Other requirements by [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding).
 
 # How to run
+**Environment setup and data preparation**
 * run ```python setup.py install``` to install torch-encoding
 * make sure you have the same path for a datset in ```/scripts/prepare_xx.py``` and ```/encoding/datasets/xxx.py```
 * run ```cd scripts```
