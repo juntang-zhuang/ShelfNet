@@ -5,7 +5,10 @@
 
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
-* run ```python setup.py install``` to configure environments 
+* PyTorch 0.4.1
+* Other requirements by [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding).
+
+# Examples on Pascal VOC datasets
 
 # Video Demo
 **Video demo of ShelfNet50 on Cityscapes**
