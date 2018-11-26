@@ -5,7 +5,7 @@ import argparse
 import tarfile
 from encoding.utils import download, mkdir
 
-_TARGET_DIR = os.path.expanduser('/data2/.encoding/data')
+_TARGET_DIR = os.path.expanduser('~/.encoding/data')
 PASD_URL="https://codalabuser.blob.core.windows.net/public/%s"
 
 def parse_args():
