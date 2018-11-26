@@ -56,8 +56,7 @@
 
 **Evaluation scripts**
 * You can use the following script to generate ground truth - prediction pairs on PASCAL VOC validation set. </br>
-```python evaluate_and_save.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar --eval
-```
+```python evaluate_and_save.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar --eval```
 
 **Measure running speed**
 * Measure running speed of ShelfNet on 512x512 image. </br>
