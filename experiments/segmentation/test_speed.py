@@ -112,7 +112,6 @@ if __name__ == "__main__":
     #args.model='pspnet'
     args.aux = True
     args.se_loss = True
-    args.backbone = 'resnet101'
     torch.manual_seed(args.seed)
     args.test_batch_size = torch.cuda.device_count()
     test(args)
