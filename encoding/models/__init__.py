@@ -4,9 +4,7 @@ from .base import *
 from .fcn import *
 from .psp import *
 from .encnet import *
-from .enc_laddernet import *
 from .fast_laddernet_se import *
-from .fcn_laddernet import   *
 def get_segmentation_model(name, **kwargs):
     from .fcn import get_fcn
     models = {
@@ -14,7 +12,5 @@ def get_segmentation_model(name, **kwargs):
         'pspnet': get_psp,
         'encnet': get_encnet,
         'laddernet':get_laddernet,
-        'encladdernet':get_encladdernet,
-        'fcnladdernet':get_fcnladder
     }
     return models[name.lower()](**kwargs)
