@@ -12,7 +12,7 @@ import torch.nn.functional as F
 import encoding
 from .base import BaseNet
 from .fcn import FCNHead
-
+from ..datasets import datasets
 __all__ = ['EncNet', 'EncModule', 'get_encnet', 'get_encnet_resnet50_pcontext',
            'get_encnet_resnet101_pcontext', 'get_encnet_resnet50_ade']
 
@@ -142,7 +142,7 @@ def get_encnet(dataset='pascal_voc', backbone='resnet50', pretrained=False,
     }
     kwargs['lateral'] = True if dataset.lower() == 'pcontext' else False
     # infer number of classes
-    from ..datasets import datasets, VOCSegmentation, VOCAugSegmentation, ADE20KSegmentation
+    
     model = EncNet(datasets[dataset.lower()].NUM_CLASS, backbone=backbone, root=root, **kwargs)
     if pretrained:
         from .model_store import get_model_file
