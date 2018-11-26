@@ -17,7 +17,7 @@ class Options():
                             help='model name (default: laddernet)')
         parser.add_argument('--diflr', action='store_true', default=True,
                             help='use different lr for head and backbone if set as True')
-        parser.add_argument('--backbone', type=str, default='resnet50',
+        parser.add_argument('--backbone', type=str, default='resnet101',
                             help='backbone name (default: resnet50)')
         parser.add_argument('--dataset', type=str, default='pascal_voc',
                             help='dataset name (default: pascal12)')
@@ -32,7 +32,7 @@ class Options():
         parser.add_argument('--crop-size', type=int, default=512,
                             help='crop image size')
         # training hyper params
-        parser.add_argument('--aux', action='store_true', default= False,
+        parser.add_argument('--aux', action='store_true', default= True,
                             help='Auxilary Loss')
         parser.add_argument('--se-loss', action='store_true', default= False,
                             help='Semantic Encoding Loss SE-loss')
