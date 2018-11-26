@@ -6,3 +6,9 @@
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
 * run ```python setup.py install``` to configure environments 
+
+# Video Demo
+
+[![Demo of ShelfNet50](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/x37Ufa2xJ6A)
+[![Demo of ShelfNet101](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/OYAGrxPvHFw)
+
