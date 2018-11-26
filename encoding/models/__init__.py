@@ -11,6 +11,6 @@ def get_segmentation_model(name, **kwargs):
         'fcn': get_fcn,
         'pspnet': get_psp,
         'encnet': get_encnet,
-        'laddernet':get_laddernet,
+        'shelfnet':get_shelfnet,
     }
     return models[name.lower()](**kwargs)
