@@ -25,7 +25,7 @@
 * run ```cd scripts```
 * run ```python prepared_xx.py ``` to prepare datasets, including MS COCO, PASCAL VOC, PASCAL Aug, PASCAL Context </br></br>
 
-**Configurations**</br>
+**Configurations** (refer to /experiments/option.py)</br>
 * --model: which model to use, default is ```shelfnet```, other options include ```pspnet```, ```encnet```,```fcn```
 * --backbone: backbone of the model, ```resnet50``` or ```resnet101```
 * --dataset: which dataset to train on, ```coco``` for MS COCO, ```pascal_aug``` for augmented PASCAL,```pascal_voc``` for PASCAL VOC,```pcontext``` for pascal context.
