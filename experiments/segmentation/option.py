@@ -32,9 +32,9 @@ class Options():
         parser.add_argument('--crop-size', type=int, default=512,
                             help='crop image size')
         # training hyper params
-        parser.add_argument('--aux', action='store_true', default= True,
+        parser.add_argument('--aux', action='store_true', default= False,
                             help='Auxilary Loss')
-        parser.add_argument('--se-loss', action='store_true', default= True,
+        parser.add_argument('--se-loss', action='store_true', default= False,
                             help='Semantic Encoding Loss SE-loss')
         parser.add_argument('--epochs', type=int, default=None, metavar='N',
                             help='number of epochs to train (default: auto)')
