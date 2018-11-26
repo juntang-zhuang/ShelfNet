@@ -65,7 +65,7 @@ class Options():
         # checking point
         parser.add_argument('--resume', type=str, default='',
                             help='put the path to resuming file if needed')
-        parser.add_argument('--checkname', type=str, default='resnet50_laddernetv66_fast_laddernet_aux_64',
+        parser.add_argument('--checkname', type=str, default='shelfnet',
                             help='set the checkpoint name')
         parser.add_argument('--model-zoo', type=str, default=None,
                             help='evaluating on model zoo model')
