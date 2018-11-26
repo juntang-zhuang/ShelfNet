@@ -109,7 +109,7 @@ def test(args):
 
 if __name__ == "__main__":
     args = Options().parse()
-    args.model='pspnet'
+    #args.model='pspnet'
     args.aux = True
     args.se_loss = True
     args.backbone = 'resnet101'
