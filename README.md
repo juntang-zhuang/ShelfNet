@@ -9,7 +9,7 @@
 
 # Video Demo
 **Click to view video demo of ShelfNet50 on Cityscapes**
-[![Demo of ShelfNet50](https://i.imgur.com/UenHRpy.png)](https://youtu.be/x37Ufa2xJ6A)
+![Demo of ShelfNet50](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet50_demo.gif)
 **Click to view video demo of ShelfNet101 on Cityscapes**
 [![Demo of ShelfNet101](https://i.imgur.com/UenHRpy.png)](https://youtu.be/OYAGrxPvHFw)
 
