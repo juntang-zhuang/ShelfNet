@@ -97,7 +97,7 @@ class Trainer():
             self.model = DataParallelModel(self.model).cuda()
             self.criterion = DataParallelCriterion(self.criterion).cuda()
         # resuming checkpoint
-        if args.resume is not None:
+        if args.resume is not None and len(args.resume)>0:
             if not os.path.isfile(args.resume):
                 raise RuntimeError("=> no checkpoint found at '{}'" .format(args.resume))
             checkpoint = torch.load(args.resume)
