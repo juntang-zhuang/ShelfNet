@@ -63,6 +63,10 @@
 ```python test_speed.py --model shelfnet --backbone resnet101```</br>
 ```python test_speed.py --model pspnet --backbone resnet101```</br>
 
+# Structure of ShelfNet
+![structure](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet.png) </br>
+
+
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
 # Video Demo on Cityscapes datasets
