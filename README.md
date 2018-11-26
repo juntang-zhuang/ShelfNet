@@ -41,6 +41,8 @@
 * pre-train ShelfNet50 on COCO, ```python train.py --backbone resnet50 --dataset coco --aux --se_loss --checkname ShelfNet50_aux```
 * fine-tune ShelfNet50 on PASCAL_aug, ```python train.py --backbone resnet50 --dataset pascal_aug --aux --se_loss --checkname ShelfNet50_aux --resume /runs/coco/ShelfNet50_aux_se/model_best.pth.tar -ft```
 * fine-tune ShelfNet50 on PASCAL VOC, ```python train.py --backbone resnet50 --dataset pascal_voc --aux --se_loss --checkname ShelfNet50_aux --resume /runs/pascal_aug/ShelfNet50_aux_se/model_best.pth.tar -ft```
+* test on PASCAL_VOC, ```python test.py --backbone resnet50 --dataset pascal_voc --aux --se_loss --resume /runs/pascal_voc/ShelfNet50_aux_se/model_best.pth.tar```
+* Similar experiments can be performed on ShelfNet101
 
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
