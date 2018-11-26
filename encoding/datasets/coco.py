@@ -10,7 +10,7 @@ class COCOSegmentation(BaseDataset):
     NUM_CLASS = 21
     CAT_LIST = [0, 5, 2, 16, 9, 44, 6, 3, 17, 62, 21, 67, 18, 19, 4,
         1, 64, 20, 63, 7, 72]
-    def __init__(self, root=os.path.expanduser('/data2/.encoding/data'), split='train',
+    def __init__(self, root=os.path.expanduser('~/.encoding/data'), split='train',
                  mode=None, transform=None, target_transform=None, **kwargs):
         super(COCOSegmentation, self).__init__(
             root, split, mode, transform, target_transform, **kwargs)
