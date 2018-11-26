@@ -5,7 +5,7 @@
 * This implementation is based on [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding). Main difference is the structure of the model. </br>
 </br>
 **Results**
-* We tested ShelfNet with ResNet50 and ResNet101 as the backbone respectively: they achieved **59 FPS** and **42 FPS** respectively on a GTX 1080Ti GPU with a 512x512 input image. ShelfNet achieved high accuracy: on PASCAL VOC 2012 test set, it achieved **84.2%** mIoU with ResNet101 backbone and **82.8%** mIoU with ResNet50 backbone; it achieved **75.8%** mIoU with ResNet50 backbone on Cityscapes dataset.
+We tested ShelfNet with ResNet50 and ResNet101 as the backbone respectively: they achieved **59 FPS** and **42 FPS** respectively on a GTX 1080Ti GPU with a 512x512 input image. ShelfNet achieved high accuracy: on PASCAL VOC 2012 test set, it achieved **84.2%** mIoU with ResNet101 backbone and **82.8%** mIoU with ResNet50 backbone; it achieved **75.8%** mIoU with ResNet50 backbone on Cityscapes dataset.
 
 
 # Requirements
