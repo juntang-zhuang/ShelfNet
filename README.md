@@ -14,6 +14,12 @@
 * tqdm
 * Other requirements by [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding).
 
+# How to run
+* run ```python setup.py install``` to install torch-encoding
+* make sure you have the same path for a datset, in ```/scripts/prepare_xx.py``` and ```/encoding/datasets/xxx.py```
+* run ```cd scripts```
+* run ```python prepared_xx.py ``` to prepare datasets, including MS COCO, PASCAL VOC, PASCAL Aug, PASCAL Context
+
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
 
