@@ -8,6 +8,10 @@
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
 * PyTorch 0.4.1
+* requests
+* nose
+* scipy
+* tqdm
 * Other requirements by [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding).
 
 # Examples on Pascal VOC datasets
