@@ -50,7 +50,7 @@
 **Test scripts**
 * To test on PASCAL_VOC, you may need to double check the path for resume.</br>
 ```python test.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume /runs/pascal_voc/ShelfNet50_aux_se/model_best.pth.tar```
-* Similar experiments can be performed on ShelfNet101
+* Similar experiments can be performed on ShelfNet with ResNet101 backbone
 
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
