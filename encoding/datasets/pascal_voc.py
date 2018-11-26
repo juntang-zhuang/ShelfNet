@@ -17,7 +17,7 @@ class VOCSegmentation(BaseDataset):
     ]
     NUM_CLASS = 21
     BASE_DIR = 'VOCdevkit/VOC2012'
-    def __init__(self, root=os.path.expanduser('/data2/.encoding/data'), split='train', mode=None, transform=None,
+    def __init__(self, root=os.path.expanduser('~/.encoding/data'), split='train', mode=None, transform=None,
                  target_transform=None,return_file = False, **kwargs):
         super(VOCSegmentation, self).__init__(root, split, mode, transform,
                                               target_transform, **kwargs)
