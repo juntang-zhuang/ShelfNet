@@ -8,7 +8,8 @@
 * run ```python setup.py install``` to configure environments 
 
 # Video Demo
-
+** Click to view video demo of ShelfNet50 on Cityscapes **
 [![Demo of ShelfNet50](https://i.imgur.com/UenHRpy.png)](https://youtu.be/x37Ufa2xJ6A)
+** Click to view video demo of ShelfNet101 on Cityscapes **
 [![Demo of ShelfNet101](https://i.imgur.com/UenHRpy.png)](https://youtu.be/OYAGrxPvHFw)
 
