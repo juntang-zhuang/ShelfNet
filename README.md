@@ -9,6 +9,6 @@
 
 # Video Demo
 
-[![Demo of ShelfNet50](https://github.com/juntang-zhuang/ShelfNet/tree/master/video_demo/video_demo.png)](https://youtu.be/x37Ufa2xJ6A)
-[![Demo of ShelfNet101](https://github.com/juntang-zhuang/ShelfNet/tree/master/video_demo/video_demo.png)](https://youtu.be/OYAGrxPvHFw)
+[![Demo of ShelfNet50](https://github.com/juntang-zhuang/ShelfNet/video_demo/video_demo.png)](https://youtu.be/x37Ufa2xJ6A)
+[![Demo of ShelfNet101](https://github.com/juntang-zhuang/ShelfNet/video_demo/video_demo.png)](https://youtu.be/OYAGrxPvHFw)
 
