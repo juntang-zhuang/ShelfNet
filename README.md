@@ -25,6 +25,8 @@
 * run ```cd scripts```
 * run ```python prepared_xx.py ``` to prepare datasets, including MS COCO, PASCAL VOC, PASCAL Aug, PASCAL Context </br></br>
 
+**Configurations**</br>
+
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
 
