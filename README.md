@@ -1,13 +1,11 @@
-# PyTorch-Encoding
+# LadderNet 
+* [Link to my homepage](https://juntangzhuang.com)
+* This is repository for my paper ShelfNet for real-time semantic segmentation, and avhieves both fast inference speed and high segmentation accuracy<br>
+* This implementation is based on [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding). Main difference is the structure of the model.
 
-created by [Hang Zhang](http://hangzh.com/)
-
-## [Documentation](http://hangzh.com/PyTorch-Encoding/)
-
-- Please visit the [**Docs**](http://hangzh.com/PyTorch-Encoding/) for detail instructions of installation and usage. 
-
-- Please visit the [link](http://hangzh.com/PyTorch-Encoding/experiments/segmentation.html) to examples of semantic segmentation.
-
+# Requirement
+* Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
+* run ```python setup.py install``` to configure environments 
 ## Citations
 
 **Context Encoding for Semantic Segmentation** [[arXiv]](https://arxiv.org/pdf/1803.08904.pdf)  
