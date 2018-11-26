@@ -11,7 +11,7 @@ import torch.nn as nn
 from torch.nn.functional import upsample
 
 from .base import BaseNet
-
+from ..datasets import datasets
 __all__ = ['FCN', 'get_fcn', 'get_fcn_resnet50_pcontext', 'get_fcn_resnet50_ade']
 
 class FCN(BaseNet):
@@ -96,7 +96,7 @@ def get_fcn(dataset='pascal_voc', backbone='resnet50', pretrained=False,
         'ade20k': 'ade',
     }
     # infer number of classes
-    from ..datasets import datasets, VOCSegmentation, VOCAugSegmentation, ADE20KSegmentation
+    
     model = FCN(datasets[dataset.lower()].NUM_CLASS, backbone=backbone, root=root, **kwargs)
     if pretrained:
         from .model_store import get_model_file
