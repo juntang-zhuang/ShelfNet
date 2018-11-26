@@ -16,7 +16,7 @@
 
 # How to run
 * run ```python setup.py install``` to install torch-encoding
-* make sure you have the same path for a datset, in ```/scripts/prepare_xx.py``` and ```/encoding/datasets/xxx.py```
+* make sure you have the same path for a datset in ```/scripts/prepare_xx.py``` and ```/encoding/datasets/xxx.py```
 * run ```cd scripts```
 * run ```python prepared_xx.py ``` to prepare datasets, including MS COCO, PASCAL VOC, PASCAL Aug, PASCAL Context
 
