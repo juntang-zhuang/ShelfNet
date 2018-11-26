@@ -13,8 +13,8 @@ class Options():
         parser = argparse.ArgumentParser(description='PyTorch \
             Segmentation')
         # model and dataset 
-        parser.add_argument('--model', type=str, default='laddernet',
-                            help='model name (default: laddernet)')
+        parser.add_argument('--model', type=str, default='shelfnet',
+                            help='model name (default: shelfnet)')
         parser.add_argument('--diflr', action='store_true', default=True,
                             help='use different lr for head and backbone if set as True')
         parser.add_argument('--backbone', type=str, default='resnet101',
