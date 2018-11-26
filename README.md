@@ -43,13 +43,13 @@
 * pre-train ShelfNet50 on COCO, </br>
 ```python train.py --backbone resnet50 --dataset coco --aux --se-loss --checkname ShelfNet50_aux```
 * fine-tune ShelfNet50 on PASCAL_aug, you may need to double check the path for resume.</br>
-```python train.py --backbone resnet50 --dataset pascal_aug --aux --se-loss --checkname ShelfNet50_aux --resume /runs/coco/ShelfNet50_aux_se/model_best.pth.tar -ft```
+```python train.py --backbone resnet50 --dataset pascal_aug --aux --se-loss --checkname ShelfNet50_aux --resume /runs/coco/shelfnet/ShelfNet50_aux_se/model_best.pth.tar -ft```
 * fine-tune ShelfNet50 on PASCAL VOC, you may need to double check the path for resume.</br>
-```python train.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --checkname ShelfNet50_aux --resume /runs/pascal_aug/ShelfNet50_aux_se/model_best.pth.tar -ft```
+```python train.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --checkname ShelfNet50_aux --resume /runs/pascal_aug/shelfnet/ShelfNet50_aux_se/model_best.pth.tar -ft```
 
 **Test scripts**
 * To test on PASCAL_VOC, you may need to double check the path for resume.</br>
-```python test.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume /runs/pascal_voc/ShelfNet50_aux_se/model_best.pth.tar```
+```python test.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --resume /runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar```
 * Similar experiments can be performed on ShelfNet with ResNet101 backbone
 
 # Examples on Pascal VOC datasets
