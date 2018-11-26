@@ -14,7 +14,5 @@
 # Video Demo on Cityscapes datasets
 **Video demo of ShelfNet50 on Cityscapes**
 <a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet50_demo.gif" align="left"  width="1000" ></a>
-![Demo of ShelfNet50 ](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet50_demo.gif) </br>
 **Video demo of ShelfNet101 on Cityscapes**
-![Demo of ShelfNet101 ](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet101_demo.gif) </br>
-
+<a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet101_demo.gif" align="left"  width="1000" ></a>
