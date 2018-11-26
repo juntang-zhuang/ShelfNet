@@ -29,7 +29,12 @@
 * --model: which model to use, default is ```shelfnet```, other options include ```pspnet```, ```encnet```,```fcn```
 * --backbone: backbone of the model, ```resnet50``` or ```resnet101```
 * --dataset: which dataset to train on, ```coco``` for MS COCO, ```pascal_aug``` for augmented PASCAL,```pascal_voc``` for PASCAL VOC,```pcontext``` for pascal context.
-
+* --aux: if type ```--aux```, the model will use auxilliray layer, which is a FCN head based on the final block of backbone, default is set as True.
+* --se_loss: a context module based on final block of backbone, the shape is 1xm where m is number of categories. It penalizes whether a category is present or not.
+* --resume: default is None. It specifies the checkpoint to load
+* --ft: fine tune flag. If set as True, the code will resume from checkpoint but forget previous best accuracy and optimizer information.
+* --checkname: folder name to store trained weights
+* Other parameters are trevial, please refer to /experiments/segmentation/option.py for more details
 
 # Examples on Pascal VOC datasets
 ![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
