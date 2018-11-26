@@ -1,0 +1,21 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -DTORCH_EXTENSION_NAME=enclib_cpu -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include/TH -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include/THC -I/home/juntang/anaconda3/envs/py36_torch/include/python3.6m -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++11
+ldflags = -shared
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out
+  depfile = $out.d
+  deps = gcc
+
+rule link
+  command = $cxx $in $ldflags -o $out
+
+build roi_align.o: compile /data2/SemanticSegmentation/PyTorch-Encoding-master/encoding/lib/cpu/roi_align.cpp
+build roi_align_cpu.o: compile /data2/SemanticSegmentation/PyTorch-Encoding-master/encoding/lib/cpu/roi_align_cpu.cpp
+
+build enclib_cpu.so: link roi_align.o roi_align_cpu.o
+
+default enclib_cpu.so
+

@@ -1,0 +1,28 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda/bin/nvcc
+
+cflags = -DTORCH_EXTENSION_NAME=enclib_gpu -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include/TH -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include/THC -I/usr/local/cuda/include -I/home/juntang/anaconda3/envs/py36_torch/include/python3.6m -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++11
+cuda_flags = -DTORCH_EXTENSION_NAME=enclib_gpu -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include/TH -I/home/juntang/anaconda3/envs/py36_torch/lib/python3.6/site-packages/torch/lib/include/THC -I/usr/local/cuda/include -I/home/juntang/anaconda3/envs/py36_torch/include/python3.6m -D_GLIBCXX_USE_CXX11_ABI=0 --compiler-options '-fPIC' -std=c++11
+ldflags = -shared -L/usr/local/cuda/lib64 -lcudart
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  command = $nvcc $cuda_flags -c $in -o $out
+
+rule link
+  command = $cxx $in $ldflags -o $out
+
+build operator.o: compile /data2/SemanticSegmentation/PyTorch-Encoding-master/encoding/lib/gpu/operator.cpp
+build encoding_kernel.cuda.o: cuda_compile /data2/SemanticSegmentation/PyTorch-Encoding-master/encoding/lib/gpu/encoding_kernel.cu
+build syncbn_kernel.cuda.o: cuda_compile /data2/SemanticSegmentation/PyTorch-Encoding-master/encoding/lib/gpu/syncbn_kernel.cu
+build roi_align_kernel.cuda.o: cuda_compile /data2/SemanticSegmentation/PyTorch-Encoding-master/encoding/lib/gpu/roi_align_kernel.cu
+
+build enclib_gpu.so: link operator.o encoding_kernel.cuda.o syncbn_kernel.cuda.o roi_align_kernel.cuda.o
+
+default enclib_gpu.so
+
