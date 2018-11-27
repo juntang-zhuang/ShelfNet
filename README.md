@@ -8,7 +8,6 @@
 * On PASCAL VOC 2012 test set, it achieved **84.2%** mIoU with ResNet101 backbone and **82.8%** mIoU with ResNet50 backbone.
 * It achieved **75.8%** mIoU with ResNet50 backbone on Cityscapes dataset.
 
-
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
 * PyTorch 0.4.1
@@ -25,7 +24,6 @@
 * run ```cd scripts```
 * run ```python prepared_xx.py ``` to prepare datasets, including MS COCO, PASCAL VOC, PASCAL Aug, PASCAL Context 
 * Download test dataset from official evaluation server for PASCAL, extract and merge with training data folder, e.g. ```~/.encoding/data/VOCdevkit``` </br></br>
-
 
 **Configurations** (refer to /experiments/option.py)</br>
 * --model: which model to use, default is ```shelfnet```, other options include ```pspnet```, ```encnet```,```fcn```
