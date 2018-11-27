@@ -62,7 +62,7 @@
 ```python test_speed.py --model pspnet --backbone resnet101```</br>
 
 **Pre-trained weights**
-* ![Link to pre-trained weight](https://drive.google.com/drive/folders/1k23TpBDsP9_gnb3LZlEcYyF4yoVzW99Z?usp=sharing)
+* [Link to pre-trained weight](https://drive.google.com/drive/folders/1k23TpBDsP9_gnb3LZlEcYyF4yoVzW99Z?usp=sharing)
 
 # Structure of ShelfNet
 ![structure](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet.png) </br>
