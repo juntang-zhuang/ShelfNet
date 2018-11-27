@@ -10,7 +10,7 @@
 
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
-* PyTorch 0.4.0
+* PyTorch 0.4.1
 * Python 3.6
 * requests
 * nose
