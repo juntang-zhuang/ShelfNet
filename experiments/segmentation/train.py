@@ -96,6 +96,9 @@ class Trainer():
         if args.cuda:
             self.model = DataParallelModel(self.model).cuda()
             self.criterion = DataParallelCriterion(self.criterion).cuda()
+        
+        self.best_pred = 0.0
+        
         # resuming checkpoint
         if args.resume is not None and len(args.resume)>0:
             if not os.path.isfile(args.resume):
@@ -135,7 +138,7 @@ class Trainer():
         # lr scheduler
         self.scheduler = utils.LR_Scheduler(args.lr_scheduler, args.lr,
                                             args.epochs, len(self.trainloader),lr_step=args.lr_step)
-        self.best_pred = 0.0
+        
 
     def training(self, epoch):
         train_loss = 0.0
