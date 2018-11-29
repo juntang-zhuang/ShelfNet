@@ -66,11 +66,11 @@
 * [Link to weights trained on PASCAL](https://drive.google.com/drive/folders/1k23TpBDsP9_gnb3LZlEcYyF4yoVzW99Z?usp=sharing)
 
 # Structure of ShelfNet
-![structure](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet.png) </br>
+![structure](video_demo/shelfnet.png) </br>
 
 
 # Examples on Pascal VOC datasets
-![Pascal results](https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/Pascal_results.png) </br>
+![Pascal results](video_demo/Pascal_results.png) </br>
 # Video Demo on Cityscapes datasets
 **Video demo of ShelfNet50 on Cityscapes**
 <a href="url"><img src="https://github.com/juntang-zhuang/ShelfNet/blob/master/video_demo/shelfnet50_demo.gif" align="left"  width="1000" ></a> </br>
