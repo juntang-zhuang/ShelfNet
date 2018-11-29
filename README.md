@@ -33,7 +33,7 @@
 * --aux: if type ```--aux```, the model will use auxilliray layer, which is a FCN head based on the final block of backbone.
 * --se_loss: a context module based on final block of backbone, the shape is 1xm where m is number of categories. It penalizes whether a category is present or not.
 * --resume: default is None. It specifies the checkpoint to load
-* --ft: fine tune flag. If set as True, the code will resume from checkpoint but forget previous best accuracy and optimizer information.
+* --ft: fine tune flag. If set as True, the code will resume from checkpoint but forget optimizer information.
 * --checkname: folder name to store trained weights
 * Other parameters are trevial, please refer to /experiments/segmentation/option.py for more details
 
