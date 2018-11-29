@@ -72,9 +72,9 @@
 # Examples on Pascal VOC datasets
 ![Pascal results](video_demo/Pascal_results.png) </br>
 # Video Demo on Cityscapes datasets
-**Video demo of ShelfNet50 on Cityscapes**
+*Video demo of ShelfNet50 on Cityscapes
 ![Video demo of ShelfNet50](video_demo/shelfnet50_demo.gif) </br>
-**Video demo of ShelfNet101 on Cityscapes** 
+*Video demo of ShelfNet101 on Cityscapes
 ![Video demo of ShelfNet101](video_demo/shelfnet101_demo.gif)</br>
 
 # Numerical results on Pascal VOC
