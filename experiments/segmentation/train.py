@@ -134,6 +134,7 @@ class Trainer():
         # clear start epoch if fine-tuning
         if args.ft:
             args.start_epoch = 0
+            self.best_pred = 0.0
 
         # lr scheduler
         self.scheduler = utils.LR_Scheduler(args.lr_scheduler, args.lr,
