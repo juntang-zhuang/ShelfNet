@@ -77,5 +77,5 @@
 * Video demo of ShelfNet101 on Cityscapes
 ![Video demo of ShelfNet101](video_demo/shelfnet101_demo.gif)
 
-# Numerical results on Pascal VOC
+# Numerical results on Pascal VOC test set
 ![Numerical Results](video_demo/results_table.png)
