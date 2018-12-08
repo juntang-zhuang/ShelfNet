@@ -12,7 +12,7 @@ import torch
 from torch.utils import data
 import torchvision.transforms as transform
 from torch.nn.parallel.scatter_gather import gather
-
+from PIL import Image
 import sys
 sys.path.insert(0,'../../')
 
@@ -110,6 +110,11 @@ def test(args):
                         for output in outputs]
             for predict, impath in zip(predicts, im_paths):
                 mask = utils.get_mask_pallete(predict, args.dataset)
+
+                if args.dataset == 'citys':
+                    mask = testset.make_pred(predict)
+                    mask = Image.fromarray(mask)
+
                 outname = os.path.splitext(impath)[0] + '.png'
                 mask.save(os.path.join(outdir, outname))
             # dummy outputs for compatible with eval mode
