@@ -104,6 +104,7 @@ Please cite our paper
 
 **Pre-trained weights**
 * [Link to weights trained on PASCAL](https://drive.google.com/drive/folders/1k23TpBDsP9_gnb3LZlEcYyF4yoVzW99Z?usp=sharing)
+* [Link to weights trained on Cityscapes](https://drive.google.com/drive/folders/1xwqJvmOw4BxiHrch8eWrBjUO_PyIBzQ-?usp=sharing)
 
 # Structure of ShelfNet
 ![structure](video_demo/shelfnet.png) </br>
