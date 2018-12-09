@@ -42,6 +42,8 @@ Please cite our paper
 
 **Cityscapes dataset preparation**
 * The data preparation code is modified from [fyu implementation](https://github.com/fyu/drn/tree/master/datasets/cityscapes)
+* The scripts are in folder scripts/prepare_citys
+* Step 1, download Cityscapes and Cityscapes Coarse dataset from [Cityscapes official website](https://www.cityscapes-dataset.com/downloads/), you need to download ```gtFine_trainvaltest.zip, gtFine_trainvaltest.zip , leftImg8bit_trainvaltest.zip, leftImg8bit_trainvaltest.zip ``` and unzip them into one folder 
 
 **Configurations** (refer to /experiments/option.py)</br>
 * --model: which model to use, default is ```shelfnet```, other options include ```pspnet```, ```encnet```,```fcn```
