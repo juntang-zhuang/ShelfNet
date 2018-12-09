@@ -31,16 +31,16 @@ Please cite our paper
 * Other requirements by [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding).
 
 # How to run
-** Environment setup **
+**Environment setup**
 * run ```python setup.py install``` to install torch-encoding
 * make sure you have the same path for a datset in ```/scripts/prepare_xx.py``` and ```/encoding/datasets/xxx.py```, default path is ```~/.encoding/data```, which is a hidden folder. You will need to type ```Ctrl + h``` to show is in ```Files```
 
-** PASCAL dataset preparation **
+**PASCAL dataset preparation**
 * run ```cd scripts```
 * run ```python prepared_xx.py ``` to prepare datasets, including MS COCO, PASCAL VOC, PASCAL Aug, PASCAL Context 
 * Download test dataset from official evaluation server for PASCAL, extract and merge with training data folder, e.g. ```~/.encoding/data/VOCdevkit``` </br>
 
-**Cityscapes dataset preparation **
+**Cityscapes dataset preparation**
 * The data preparation code is modified from [fyu implementation](https://github.com/fyu/drn/tree/master/datasets/cityscapes)
 
 **Configurations** (refer to /experiments/option.py)</br>
