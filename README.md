@@ -45,8 +45,8 @@ Please cite our paper
 * The scripts are in folder scripts/prepare_citys
 * Step 1, download Cityscapes and Cityscapes Coarse dataset from [Cityscapes official website](https://www.cityscapes-dataset.com/downloads/), you need to download ```gtFine_trainvaltest.zip, gtFine_trainvaltest.zip , leftImg8bit_trainvaltest.zip, leftImg8bit_trainvaltest.zip ``` and unzip them into one folder 
 * Step 2, prepare fine labelled dataset:</br>
-  convert original segmentation id into 19 training ids ```python3 scripts/prepare_citys/prepare_data.py <cityscape folder>/gtFine/```</br>
-  Run ```sh create_lists_citys.sh``` in cityscape data folder, and move ```info.json``` into the data folder
+  * convert original segmentation id into 19 training ids ```python3 scripts/prepare_citys/prepare_data.py <cityscape folder>/gtFine/```</br>
+  * Run ```sh create_lists_citys.sh``` in cityscape data folder, and move ```info.json``` into the data folder
 * Step 3, prepare coarse labelled dataset: <br>
   convert original segmentation id into 19 training ids ```python3 scripts/prepare_citys/prepare_data.py <cityscape folder>/gtCoarse/```</br>
   Run ```sh create_lists_citys_coarse.sh``` in cityscape data folder, and move ```info.json``` into the data folder
