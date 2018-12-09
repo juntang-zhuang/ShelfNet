@@ -52,6 +52,7 @@ Please cite our paper
   * Run ```sh create_lists_citys_coarse.sh``` in cityscape data folder, and move ```info.json``` into the data folder
   
 **Configurations** (refer to /experiments/option.py)</br>
+* --diflr: default value is True. If set as True, the head uses 10x larger learning rate than the backbone; otherwise head and backbone uses the same learning rate.
 * --model: which model to use, default is ```shelfnet```, other options include ```pspnet```, ```encnet```,```fcn```
 * --backbone: backbone of the model, ```resnet50``` or ```resnet101```
 * --dataset: which dataset to train on, ```coco``` for MS COCO, ```pascal_aug``` for augmented PASCAL,```pascal_voc``` for PASCAL VOC,```pcontext``` for pascal context.
@@ -62,7 +63,7 @@ Please cite our paper
 * --checkname: folder name to store trained weights
 * Other parameters are trevial, please refer to /experiments/segmentation/option.py for more details
 
-**Training scripts**
+**Training scripts on PASCAL VOC**
 * run ```cd /experiments/segmentation```
 * pre-train ShelfNet50 on COCO, </br>
 ```python train.py --backbone resnet50 --dataset coco --aux --se-loss --checkname ShelfNet50_aux```
@@ -71,12 +72,20 @@ Please cite our paper
 * fine-tune ShelfNet50 on PASCAL VOC, you may need to double check the path for resume.</br>
 ```python train.py --backbone resnet50 --dataset pascal_voc --aux --se-loss --checkname ShelfNet50_aux --resume ./runs/pascal_aug/shelfnet/ShelfNet50_aux_se/model_best.pth.tar -ft```
 
-**Test scripts**
+**Training scripts on Cityscapes**
+* run ```cd /experiments/segmentation```
+* pre-train ShelfNet50 on coarse labelled dataset, </br>
+```python train.py --diflr False --backbone resnet50 --dataset citys_coarse --checkname ShelfNet50_citys_coarse```
+* fine-tune ShelfNet50 on fine labelled dataset, you may need to double check the path for resume.</br>
+```python train.py --diflr False --backbone resnet50 --dataset citys --checkname citys_coarse --resume ./runs/citys_coarse/shelfnet/ShelfNet50_citys_coarse/model_best.pth.tar -ft```
+
+
+**Test scripts on PASCAL VOC**
 * To test on PASCAL_VOC with multiple-scales input \[0.5, 0.75, 1.0, 1.25, 1.5, 1.75\].</br>
 ```python test.py --backbone resnet50 --dataset pascal_voc --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar```
 * To test on PASCAL_VOC with single-scale input</br>
 ```python test_single_scale.py --backbone resnet50 --dataset pascal_voc --resume ./runs/pascal_voc/shelfnet/ShelfNet50_aux_se/model_best.pth.tar```
-* Similar experiments can be performed on ShelfNet with ResNet101 backbone
+* Similar experiments can be performed on ShelfNet with ResNet101 backbone, and experiments on Cityscapes can be performed by changing dataset as ```--dataset citys```
 
 **Evaluation scripts**
 * You can use the following script to generate ground truth - prediction pairs on PASCAL VOC validation set. </br>
