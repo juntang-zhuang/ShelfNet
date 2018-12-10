@@ -9,17 +9,6 @@
 * On PASCAL VOC 2012 test set, it achieved **84.2%** mIoU with ResNet101 backbone and **82.8%** mIoU with ResNet50 backbone.
 * It achieved **75.8%** mIoU with ResNet50 backbone on Cityscapes dataset.
 
-# Citation
-Please cite our paper
-```
-@article{zhuang2018shelfnet,
-  title={ShelfNet for Real-time Semantic Segmentation},
-  author={Zhuang, Juntang and Yang, Junlin},
-  journal={arXiv preprint arXiv:1811.11254},
-  year={2018}
-}
-```
-
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
 * PyTorch 0.4.1 
