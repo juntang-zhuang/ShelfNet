@@ -1,7 +1,7 @@
 # ShelfNet 
 * [Link to project page](https://github.com/juntang-zhuang/ShelfNet/)
 * [Link to my homepage](https://juntangzhuang.com)
-* This is repository for my paper [ShelfNet for real-time semantic segmentation](https://arxiv.org/abs/1811.11254), and achieves both faster inference speed and higher segmentation accuracy, compared with other real-time models such as Lightweight-RefineNet.
+* This is repository for a real-time semantic segmentation CNN, and achieves both faster inference speed and higher segmentation accuracy, compared with other real-time models such as Lightweight-RefineNet.
 * This branch performs experiments on Cityscapes dataset, please see branch ```master``` for experiments on PASCAL VOC dataset.
 * This implementation is based on [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding). Main difference is the structure of the model. 
 
