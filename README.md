@@ -17,17 +17,6 @@
 * The paper does not use synchronized batch normalization, while this implementation uses synchronized batch normalization across multiple GPUs.
 * For training on coarse labelled data, in this implementation the learning rate is set as 0.01 and remains constant; in results for the paper, the training on coarse labelled data uses a poly decay schedule, but the total epochs is set as 500, while I stopped the training mannualy at epoch 35 (In this way, there is a very slight decay on learning rate instead of constant).
 
-# Citation
-Please cite our paper
-```
-@article{zhuang2018shelfnet,
-  title={ShelfNet for Real-time Semantic Segmentation},
-  author={Zhuang, Juntang and Yang, Junlin},
-  journal={arXiv preprint arXiv:1811.11254},
-  year={2018}
-}
-```
-
 # Requirements
 * Please refer to [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for implementation on synchronized batch-normalization layer.
 * PyTorch 0.4.1 
