@@ -11,7 +11,7 @@
 * It achieved **75.8%** mIoU with ResNet50 backbone on Cityscapes dataset.
 
 **Differences from results reported in the paper**
-* The result of ShelfNet is slightly different on this implementation and reported in the paper (75.4% in this implementation, 75.8% in the paper).
+* The result of ShelfNet50 is slightly different on this implementation and reported in the paper (75.4% in this implementation, 75.8% in the paper).
 * The paper trains 500 epochs, while here the training epoch is 240.
 * The paper does not use synchronized batch normalization, while this implementation uses synchronized batch normalization across multiple GPUs.
 * For training on coarse labelled data, in this implementation the learning rate is set as 0.01 and remains constant; in results for the paper, the training on coarse labelled data uses a poly decay schedule, but the total epochs is set as 500, while I stopped the training mannualy at epoch 35 (In this way, there is a very slight decay on learning rate instead of constant).
