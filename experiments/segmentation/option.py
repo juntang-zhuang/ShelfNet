@@ -27,9 +27,9 @@ class Options():
                             $(HOME)/data)')
         parser.add_argument('--workers', type=int, default=20,
                             metavar='N', help='dataloader threads')
-        parser.add_argument('--base-size', type=int, default=608,
+        parser.add_argument('--base-size', type=int, default=1024, # 608 for PASCAL
                             help='base image size')
-        parser.add_argument('--crop-size', type=int, default=512,
+        parser.add_argument('--crop-size', type=int, default=768, # 512 for PASCAL
                             help='crop image size')
         # training hyper params
         parser.add_argument('--aux', action='store_true', default= False,
