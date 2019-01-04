@@ -19,7 +19,7 @@ class Options():
                             help='use different lr for head and backbone if set as True')
         parser.add_argument('--backbone', type=str, default='resnet101',
                             help='backbone name (default: resnet50)')
-        parser.add_argument('--dataset', type=str, default='pascal_voc',
+        parser.add_argument('--dataset', type=str, default='citys',
                             help='dataset name (default: pascal12)')
         parser.add_argument('--data-folder', type=str,
                             default=os.path.join(os.environ['HOME'], 'data'),
