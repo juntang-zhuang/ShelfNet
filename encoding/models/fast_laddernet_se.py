@@ -1,7 +1,7 @@
 ###########################################################################
-# Created by: Hang Zhang
-# Email: zhang.hang@rutgers.edu
-# Copyright (c) 2017
+# Created by: Juntang Zhuang
+# Email: j.zhuang@yale.edu
+# Copyright (c) 2018
 ###########################################################################
 
 import torch
