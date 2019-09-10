@@ -1,7 +1,7 @@
 # Introduction
 * This is repository for paper [ShelfNet for fast semantic segmentation](https://arxiv.org/abs/1811.11254), implementing a fast segmentation CNN, and achieves both faster inference speed and higher segmentation accuracy, compared with other real-time models such as Lightweight-RefineNet.
 * This branch performs experiments on Cityscapes dataset, please see branch ```pascal``` for experiments on PASCAL VOC dataset.
-* Light-weight ShelfNet is implemented in repo [ShelfNet-lw-cityscapes](https://github.com/juntang-zhuang/ShelfNet-lw-cityscapes), it achieves 74.8% mIoU on Cityscapes at 36.9 FPS on 1024x2048 image in real-time tasks, and achieves 79.0% mIoU in non real-time tasks with ResNet34 backbone (suparssing PSPNet and BiSeNet with ResNet50 and ResNet101 backbone).
+* Light-weight ShelfNet is implemented in repo [ShelfNet-lw-cityscapes](https://github.com/juntang-zhuang/ShelfNet-lw-cityscapes), it achieves 74.8% mIoU on Cityscapes in real-time tasks, with a speed of 59.2 FPS (61.1 FPS for BiSeNet at 74.7% on a GTX 1080Ti GPU); and achieves 79.0% mIoU in non real-time tasks with ResNet34 backbone (suparssing PSPNet and BiSeNet with ResNet50 and ResNet101 backbone).
 * This implementation is based on [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding). Main difference is the structure of the model. 
 
 **Results**
