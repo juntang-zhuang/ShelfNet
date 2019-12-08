@@ -1,6 +1,6 @@
 # Introduction 
 * This is repository for a real-time segmentation CNN,, and achieves both faster inference speed and higher segmentation accuracy, compared with other real-time models such as Lightweight-RefineNet.
-* This branch only performs experiments on PASCAL VOC dataset. Please branch ```citys``` for experiments on Cityscapes dataset.
+* This branch only performs experiments on PASCAL VOC dataset. Please branch ```citys_lw``` for experiments on Cityscapes dataset.
 * This implementation is based on [torch-encoding](https://github.com/zhanghang1989/PyTorch-Encoding). Main difference is the structure of the model. </br></br>
 **Results**</br>
 * We tested ShelfNet with ResNet50 and ResNet101 as the backbone respectively: they achieved **59 FPS** and **42 FPS** respectively on a GTX 1080Ti GPU with a 512x512 input image. 
