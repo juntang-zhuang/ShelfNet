@@ -3,8 +3,13 @@
 * For real-time tasks, we achieved 74.8% mIoU on Ctiyscapes dataset, with a speed of 59.2 FPS (61.7 FPS for BiSeNet at 74.7% on a GTX 1080Ti GPU). <br/>
 * For non real-time tasks, we achieved 79.0% mIoU on Cityscapes test set with ResNet34 backbone, suparssing other models (PSPNet and BiSeNet) with largers backbones with ResNet50 or Resnet 101 backbone. <br/>
 * For Non light-weight ShelfNet implementation, refer to another [ShelfNet repo](https://github.com/juntang-zhuang/ShelfNet). <br/>
+* This branch is the result on Cityscapes experiment, for results on PASCAL, see branch ```pascal```
 
 This repo is based on two implementations [Implementation 1](https://github.com/ycszen/TorchSeg) and [Implementation 2](https://github.com/CoinCheung/BiSeNet). This implementation takes about 24h's training on 2 GTX 1080Ti GPU. <br/>
+
+## Results
+![Imagess](figures/images.png)</br>
+![Cityscapes results](figures/results_shelfnet.png) </br>
 
 ## Link to results on Cityscapes test set
 ShelfNet18-lw real-time: [https://www.cityscapes-dataset.com/anonymous-results/?id=b2cc8f49fc3267c73e6bb686425016cb152c8bc34fc09ac207c81749f329dc8d](https://www.cityscapes-dataset.com/anonymous-results/?id=b2cc8f49fc3267c73e6bb686425016cb152c8bc34fc09ac207c81749f329dc8d) <br/>
