@@ -31,7 +31,7 @@ $ unzip gtFine_trainvaltest.zip
 We provide two models, ShelfNet18 with 64 base channels for real-time semantic segmentation, and ShelfNet34 with 128 base channels for non-real-time semantic segmentation. <br/>Pretrained weights for [ShelfNet18](https://www.dropbox.com/s/84ol8lk99qcis9p/ShelfNet18_realtime.pth?dl=0) and [ShelfNet34](https://www.dropbox.com/s/q9jae02qe27wwa3/ShelfNet34_non_realtime.pth?dl=0).
 
 ## Requirements
-PyTorch 1.0 or higher <br/>
+PyTorch 1.1 <br/>
 python3 <br/>
 scikit-image <br/>
 tqdm<br/>
